@@ -1,0 +1,22 @@
+    /* Shared Styles */
+    .navbar-brandimage {
+      width: 40px;
+      height: 40px;
+    }
+    body {
+      padding-bottom: 200px; /* For bottom navbar spacing */
+    }
+    /* Optional Dark Mode Styles */
+    .dark-mode {
+      background-color: #121212;
+      color: #ffffff;
+    }
+    .dark-mode .navbar, 
+    .dark-mode .card, 
+    .dark-mode .container {
+      background-color: #333333;
+      color: #ffffff;
+    }
+    .dark-mode a {
+      color: #9d9d9d;
+    }

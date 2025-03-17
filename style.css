@@ -1,0 +1,115 @@
+    .masthead {
+      position: relative;
+      width: 100%;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+    #bg-video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+    .overlay {
+      position: relative;
+      background: rgba(255, 255, 255, 0.4);
+      color: black;
+      padding: 15px 30px;
+      border-radius: 10px;
+      z-index: 1;
+    }
+    .navbar-brandimage {
+      width: 40px;
+      height: 40px;
+    }
+    @media (max-width: 768px) {
+      .masthead {
+        width: auto;
+      }
+    }
+    .product-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+    .carousel-item img {
+      max-height: 200px;
+      object-fit: cover;
+    }
+    .rating {
+      color: gold;
+    }
+    body {
+      padding-bottom: 200px; /* Adjust this value based on the navbar height */
+    }
+    
+    /* Dark mode styles */
+    .dark-mode {
+      background-color: #121212;
+      color: #ffffff;
+    }
+    .dark-mode .navbar,
+    .dark-mode .card,
+    .dark-mode .container,
+    .dark-mode .overlay {
+      background-color: #333333;
+      color: #ffffff;
+    }
+    .dark-mode a {
+      color: #9d9d9d;
+    }
+    /* Update the navbar background for dark mode */
+    .dark-mode .navbar {
+      background-color: #343a40 !important;
+    }
+    .cursor {
+      font-weight: bold;
+      animation: blink 1s step-end infinite;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+    /* The section with the static background image */
+    .window-effect-laptop {
+      position: relative;
+      height: 400px; /* Adjust height as needed */
+      background-size: auto 60%;
+      background-image: url('laptop-computer-black-color-place-table-with-dark-background-3d-illustration-rendering-image_37129-1714.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      background-color: #141414;
+      background-position: center top;
+    }
+    .window-effect-ram {
+      position: relative;
+      height: 400px; /* Adjust height as needed */
+      background-size: auto 60%;
+      background-image: url('electronic-collection-computer-random-access-memory-ram-modules-black-background_486684-1938.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      background-color: black;
+      background-position: center top;
+    }
+    .window-effect-ssd {
+      position: relative;
+      height: 400px; /* Adjust height as needed */
+      background-size: 100% auto;
+      background-image: url('m2-pcie-ssd-electronic-board-260nw-2407035593.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      background-color: black;
+      background-position: center top;
+    }
