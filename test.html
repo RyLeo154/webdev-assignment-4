@@ -1,243 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>eCommerce Landing Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .masthead {
-            background: url('computer-peripherals-laptop-accessories-composition-white-wooden-board-47590141.jpg') no-repeat center center/cover;
-            color: black;
-            font-style: bold;
-            height: 500px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            flex-direction: column;
-        }
-        
-        .navbar-brandimage {
-            width: 40px;
-            height: 40px;
-        }
-        .overlay {
-        background: rgba(255, 255, 255, 0.8); /* Semi-transparent black */
-        padding: 15px;
-        padding-left: 30px;
-        padding-right: 30px;
-        border-radius: 10px;
-        }
-        @media (max-width: 768px) {
-            .masthead {
-                width: auto;
-            }
-        }
-        .product-card img {
-            height: 200px;
-            object-fit: cover;
-        }
-        .carousel-item img {
-            max-height: 200px;
-            object-fit: cover;
-        }
-        .rating {
-            color: gold;
-        }
-        body {
-            padding-bottom: 200px; /* Adjust this value based on the navbar height */
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zynaptics Technologies</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Navbar Styling */
+    .navbar-brandimage {
+      width: 40px;
+      height: 40px;
+    }
+    .dark-mode {
+      background-color: #121212;
+      color: #ffffff;
+    }
+    .dark-mode .navbar, .dark-mode .card, .dark-mode .modal-content {
+      background-color: #333333;
+      color: #ffffff;
+    }
+  </style>
 </head>
 <body>
-    
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
-        <div class="container">
-            <img class="navbar-brandimage" src="my-11134216-7r98r-luaqxomk6fnxa2_tn.jpg">
-            <a class="navbar-brand" href="#">Zynaptics Technologies</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    
-    <header class="masthead">
-        <div class="overlay">
-            <h1 class="display-4">Welcome to <b>Zynaptics</b>.</h1>
-            <p class="lead">Hardware at a price that won't break your wallet.</p>
-        </div>
-    </header>
-    
-    <div class="text-center my-4">
-        <span class="d-inline-block px-3 text-muted">● ● ●</span>
+  <!-- Top Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
+    <div class="container">
+      <img class="navbar-brandimage" src="my-11134216-7r98r-luaqxomk6fnxa2_tn.jpg" alt="Logo">
+      <a class="navbar-brand" href="#">Zynaptics Technologies</a>
     </div>
+  </nav>
 
-    <section id="about" class="py-5 bg-light">
-        <div class="container text-center">
-            <h2>About Zynaptics</h2>
-            <p class="lead">Affordable Performance, Unmatched Value</p>
-            <p>
-                At <b>Zynaptics</b>, we specialize in providing high-quality budget computers and accessories 
-                that deliver the performance you need without breaking the bank. Whether you're a student, 
-                professional, or gamer on a budget, we have the perfect solution for you. 
-                Experience reliable technology at unbeatable prices.
-            </p>
+  <!-- Product Listings -->
+  <div class="container my-5" style="margin-top: 100px;">
+    <h2>Featured Products</h2>
+    <div class="row">
+      <!-- Laptop -->
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Laptop</h5>
+            <p class="card-text">Powerful performance for work and play.</p>
+            <button class="btn btn-primary" onclick="showVariantModal('Laptop')">Add to Cart</button>
+          </div>
         </div>
-    </section>
-    
-    <hr>
-    
-    <section id="products" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Featured Products</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card product-card">
-                        <img src="images.jpg" style="height: auto; width: auto;" class="card-img-top" alt="Product">
-                        <div class="card-body text-center">
-                            <h5 class="card-title"><b>Lenovo Legion Y530-15ICH</b></h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Interested to start gaming? Your journey starts here.<br>i7-8750H + GTX 1060 Max-Q + 16GB DDR4</h6>
-                            <p class="rating">★★★★★</p>
-                            <p class="card-text">From RM1899.99</p>
-                            <a href="#" class="btn btn-outline-primary">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card product-card">
-                        <img src="https://americas.kioxia.com/content/dam/kioxia/shared/business/ssd/client-ssd/img/bg6_img_001.png" style="height: auto; width: auto; class="card-img-top" alt="Product">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">KIOXIA BG6 M.2 PCIe x4 NVMe SSD</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Make way for bigger, better games with reliability in mind.<br>Form Factors: M.2 2230, M.2 2280</h6>
-                            <p class="rating">★★★★☆</p>
-                            <p class="card-text">From RM79.99</p>
-                            <a href="#" class="btn btn-outline-primary">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card product-card">
-                        <img src="https://m.media-amazon.com/images/I/81bkhaiG32L._AC_SL1500_.jpg" style="width:auto; height: auto; padding:40px;" class="card-img-top" alt="Product">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">16GB Samsung 3200MHz DDR4 SO-DIMM RAM</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Struggling to find enough RAM at a reasonable price? Look no further!</h6>
-                            <p class="rating">★★★★☆</p>
-                            <p class="card-text">RM159.99</p>
-                            
-                            <a href="#" class="btn btn-outline-primary">Buy Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="testimonials" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-4">Customer Testimonials</h2>
-            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="text-center">
-                            <p class="lead"><img src="https://americas.kioxia.com/content/dam/kioxia/shared/business/ssd/client-ssd/img/bg6_img_001.png" style="height: auto; width: auto; class="card-img-top" alt="Product"><br><br>★★★★★★<br>"Amazing products and top-notch service!"</p>
-                            <small>- Alex T.</small>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="text-center">
-                            <p class="lead"><img src="https://americas.kioxia.com/content/dam/kioxia/shared/business/ssd/client-ssd/img/bg6_img_001.png" style="height: auto; width: auto; class="card-img-top" alt="Product"><Br><br>★★★★★★<br>"Quick delivery and great quality!"</p>
-                            <small>- Jessica R.</small>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="text-center">
-                            <p class="lead"><img src="https://m.media-amazon.com/images/I/81bkhaiG32L._AC_SL1500_.jpg" style="width:auto; height: auto; padding:40px;" class="card-img-top" alt="Product"><br><br>★★★★★★<br>"Will definitely shop here again!"</p>
-                            <small>- Mark D.</small>
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </a>
-                <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </a>
-            </div>
-        </div>
-    </section>
+      </div>
 
-    <hr>
-
-    <section id="loyalty" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Loyalty Rewards Program</h2>
-            <p class="text-center mb-5">Join our rewards program and enjoy exclusive benefits!</p>
-            <div class="row justify-content-center">
-                
-                <!-- Silver Tier -->
-                <div class="col-md-4">
-                    <div class="card text-center border-secondary shadow" style="background-color: #C0C0C0; height: 300px;">
-                        <div class="card-body d-flex flex-column justify-content-between">
-                            <h5 class="card-title">Silver Tier</h5>
-                            <p class="card-text">🎉 Earn 1 point per RM1 spent<br>✅ 5% discount on all purchases<br>🎁 Exclusive member deals</p>
-                            <button class="btn btn-outline-dark">Join Now</button>
-                        </div>
-                    </div>
-                </div>
-    
-                <!-- Gold Tier -->
-                <div class="col-md-4">
-                    <div class="card text-center border-warning shadow-lg" style="background-color: #FFD700; height: 350px;">
-                        <div class="card-body d-flex flex-column justify-content-between">
-                            <h5 class="card-title">Gold Tier</h5>
-                            <p class="card-text">🔥 Earn 2 points per RM1 spent<br>✅ 10% discount on all purchases<br>🚚 Free shipping on all orders</p>
-                            <button class="btn btn-outline-dark">Upgrade Now</button>
-                        </div>
-                    </div>
-                </div>
-    
-                <!-- Platinum Tier -->
-                <div class="col-md-4">
-                    <div class="card text-center border-dark shadow-lg" style="background-color: #E5E4E2; height: 400px;">
-                        <div class="card-body d-flex flex-column justify-content-between">
-                            <h5 class="card-title">Platinum Tier</h5>
-                            <p class="card-text">💎 Earn 3 points per RM1 spent<br>✅ 15% discount on all purchases<br>🚀 Priority customer support<br>🎁 Exclusive Platinum rewards<br>🏆 FREE exclusive stickers with every purchase</p>
-                            <button class="btn btn-outline-dark">Unlock Platinum</button>
-                        </div>
-                    </div>
-                </div>
-    
-            </div>
+      <!-- SSD -->
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">SSD</h5>
+            <p class="card-text">High-speed storage for your system.</p>
+            <button class="btn btn-primary" onclick="showVariantModal('SSD')">Add to Cart</button>
+          </div>
         </div>
-    </section>
-    
-    <hr>
-    
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
-        <div class="container">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item"><a class="nav-link text-white" href="#">Privacy Policy</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#">Terms of Service</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#">Contact Support</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#">Follow Us</a></li>
-            </ul>
+      </div>
+
+      <!-- RAM -->
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">RAM</h5>
+            <p class="card-text">Boost your system's memory capacity.</p>
+            <button class="btn btn-primary" onclick="showVariantModal('RAM')">Add to Cart</button>
+          </div>
         </div>
-    </nav>
+      </div>
+    </div>
+  </div>
 
-    <hr style="border: 2px solid #ddd; margin: 30px 0, margin-bottom: 200px;">
+  <!-- Variant Selection Modal -->
+  <div class="modal fade" id="variantModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="variantTitle">Select Variant</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form id="variantForm">
+            <div id="variantOptions"></div>
+            <h5>Total Price: RM<span id="variantPrice">0.00</span></h5>
+            <button type="submit" class="btn btn-success mt-3">Add to Cart</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- JavaScript -->
+  <script>
+    const productVariants = {
+      "Laptop": [
+        { name: "8GB RAM + 512GB SSD", price: 2500 },
+        { name: "16GB RAM + 1TB SSD", price: 3200 },
+        { name: "32GB RAM + 2TB SSD + 1TB HDD", price: 4000 }
+      ],
+      "SSD": [
+        { name: "256GB", price: 150 },
+        { name: "512GB", price: 280 },
+        { name: "1TB", price: 500 }
+      ],
+      "RAM": [
+        { name: "8GB - 2666MHz", price: 180 },
+        { name: "16GB - 3200MHz", price: 320 },
+        { name: "32GB - 3600MHz", price: 600 }
+      ]
+    };
+
+    let selectedProduct = "";
+    let selectedVariant = null;
+
+    function showVariantModal(product) {
+      selectedProduct = product;
+      document.getElementById('variantTitle').textContent = `Select ${product} Variant`;
+      
+      const optionsDiv = document.getElementById('variantOptions');
+      optionsDiv.innerHTML = "";
+      productVariants[product].forEach((variant, index) => {
+        optionsDiv.innerHTML += `
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="variant" id="variant${index}" value="${index}" required>
+            <label class="form-check-label" for="variant${index}">${variant.name} - RM${variant.price.toFixed(2)}</label>
+          </div>`;
+      });
+
+      document.getElementById('variantPrice').textContent = "0.00";
+      new bootstrap.Modal(document.getElementById('variantModal')).show();
+    }
+
+    document.getElementById('variantForm').addEventListener('change', function(e) {
+      if (e.target.name === "variant") {
+        selectedVariant = productVariants[selectedProduct][e.target.value];
+        document.getElementById('variantPrice').textContent = selectedVariant.price.toFixed(2);
+      }
+    });
+
+    document.getElementById('variantForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      if (!selectedVariant) {
+        alert("Please select a variant.");
+        return;
+      }
+
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      cart.push({
+        name: selectedProduct,
+        variant: selectedVariant.name,
+        price: selectedVariant.price,
+        quantity: 1
+      });
+
+      localStorage.setItem('cart', JSON.stringify(cart));
+      alert(`${selectedProduct} (${selectedVariant.name}) added to cart!`);
+      bootstrap.Modal.getInstance(document.getElementById('variantModal')).hide();
+    });
+  </script>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
